@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// the function bellow finds all possible combinations of coins (that sum to a value n) using a backtracking approach (recursive)
+// the function below finds all possible combinations of coins (that sum to a value n) using a backtracking approach (recursive)
 void findCombinations(int n, int index, const vector<int>& coins, vector<int>& current, set<vector<int>>& result) {
     // if the remaining value is 0, the combination is added to the result set
     if (n == 0) {
@@ -27,7 +27,7 @@ void findCombinations(int n, int index, const vector<int>& coins, vector<int>& c
     current[index] = 0; // reset
 }
 
-// the function bellow creates the initial variables, calls the recursive function and returns the set(result)
+// the function below creates the initial variables, calls the recursive function and returns the set(result)
 vector<vector<int>> makeChange(int n) {
     vector<int> coins = {25, 10, 5, 1};
     vector<int> current(4, 0);
