@@ -3,6 +3,7 @@
 
 using namespace std;
 
+// faço mais o uso de classes em java, mas em c++ utilizo structs para a maioria das estruturas de dados que aprendi em Algoritmos.
 typedef struct {
     int *data;
     size_t size;
